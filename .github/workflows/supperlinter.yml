@@ -1,16 +1,16 @@
-name: Supper-Linter
+name: supper-linter
 
 on: push
 
 jobs:
-  super-lint:
+  supper-lint:
     name: Lint code base
-    runs-on: ubunto-lates
+    runs-on: ubuntu-latest
     steps:
       - name: check code
-        uses: action/checkout@v2
+        uses: actions/checkout@v2
      
-      - name: Run Supper-Linter
+      - name: Run supper-linter
         uses: github/supper-linter@v3
         env:
           DEFAULT_BRANCH: master
