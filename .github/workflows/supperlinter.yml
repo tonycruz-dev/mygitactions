@@ -2,7 +2,7 @@ name: Supper-Linter
 
 on: push
 
-Jobs:
+jobs:
   super-lint:
     name: Lint code base
     runs-on: ubunto-lates
@@ -11,7 +11,7 @@ Jobs:
         uses: action/checkout@v2
      
       - name: Run Supper-Linter
-        user: github/supper-linter@v3
+        uses: github/supper-linter@v3
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
