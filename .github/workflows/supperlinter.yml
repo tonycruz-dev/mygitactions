@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v2
      
       - name: Run Supper-Linters
-        uses: github/supper-linter@v3
+        uses: github/supperlinter@v1
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
