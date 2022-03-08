@@ -1,4 +1,4 @@
-name: supper-linter
+name: Supper-Linter
 
 on: push
 
@@ -10,7 +10,7 @@ jobs:
       - name: check code
         uses: actions/checkout@v2
      
-      - name: Run supper-linter
+      - name: Run Supper-Linter
         uses: github/supper-linter@v3
         env:
           DEFAULT_BRANCH: master
